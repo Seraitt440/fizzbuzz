@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fizz Buzz</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    var i;
+
+    for (var i = 1; i <= 100; i++) {
+      //have to calculate for both 3 and 5 first
+      if ((i % 3 == 0) && (i % 5 == 0)) {
+        document.write("FizzBuzz", "<br>");
+      }
+
+      else if (i % 3 == 0) {
+        document.write("Fizz", "<br>");
+      }
+
+      else if (i % 5 == 0) {
+        document.write("Buzz", "<br>");
+      }
+
+      //if not divisible by 3 or 5 or both, print out numbers instead of Fizz or Buzz or FizzBuzz
+      else {
+        document.write(i, "<br>");
+      }
+    }
+  </script>
+
+</body>
+</html>
